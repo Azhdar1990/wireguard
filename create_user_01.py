@@ -4,13 +4,13 @@ import os
 
 # Variables
 parent_dir = "./config" # wireguard configuration dirrectory
-wireguard_subnet = "10.13.13" # type here wireguard subnet for clients. Only first 3 octet.
-wireguard_dns = "10.13.13.1" # type here wireguard local ip address. It also use for dns because wierguard use coredns.
+wireguard_subnet = "10.13.14" # type here wireguard subnet for clients. Only first 3 octet.
+wireguard_dns = "10.13.14.1" # type here wireguard local ip address. It also use for dns because wierguard use coredns.
 new_number = "0" # this is a number for last octet for client ip address. it will change each time when adding client.
 lister_port = "51820" 
-endpoint = "195.201.99.108" # host public ip.
+endpoint = "1.1.1.1" # host public ip.
 allowedips = "0.0.0.0/0" 
-wireguard_container_name = "wireguard"
+wireguard_container_name = "wireguard-01"
 #####################################################
 def wg_genkey(new_folder,user_name,genkey_command): # user crypto key generation.
     os.system(genkey_command)
